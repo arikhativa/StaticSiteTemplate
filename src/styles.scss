@@ -5,38 +5,19 @@
 @import 'primeflex/primeflex.css';
 
 :root {
-    --box-shadow: -11px 19px 3px rgba(0, 0, 0, 0.5);
-
     // Colors
-    --border: rgb(255 255 255 / 25%);
-    --background: #565656;
 
-    --primary: #3239ba;
-    --primary-mid: #5358c1;
-    --primary-light: #8389f0;
-    // TODO these are not good colors
-    --background-light: rgb(255 255 255 / 25%);
-    --background-dark: rgba(255, 255, 255, 15%);
-
-    // not sure about these
-    font-weight: 400;
-    font-style: normal;
-
-    // override PrimeNG
+    // override PrimeNG //TODO
     --font-family: 'Inconsolata', monospace;
     --text-color: #fff;
-    --primary-color: var(--primary);
+    --primary-color: black;
 }
 
 html,
 body {
-    pointer-events: none;
+    pointer-events: none; // TODO
     margin: 0;
     padding: 0;
-
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none; /* Hide scrollbar */
-    -moz-scrollbar-width: none; /* Old Firefox versions */
 }
 
 * {
@@ -44,12 +25,9 @@ body {
     -webkit-tap-highlight-color: transparent; // remove tap highlight
 }
 
+// TODO
 p-button {
     pointer-events: auto;
-}
-
-.z--1 {
-    z-index: -1;
 }
 
 .bg-blue {
@@ -98,20 +76,6 @@ p-button {
 }
 
 // Animations
-@keyframes float {
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-5px);
-    }
-}
-
-.float {
-    animation: float 7s ease-in-out infinite;
-}
-
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -123,30 +87,4 @@ p-button {
 
 .fade-in {
     animation: fadeIn 1s ease forwards;
-}
-
-@keyframes slideUpNavbar {
-    from {
-        transform: translate(-50%, 100%);
-    }
-    to {
-        transform: translate(-50%, 0);
-    }
-}
-
-.slide-up-navbar {
-    animation: slideUpNavbar 0.5s ease forwards;
-}
-
-@keyframes slideLeftNavbar {
-    from {
-        transform: translate(100%, -50%);
-    }
-    to {
-        transform: translate(0, -50%);
-    }
-}
-
-.slide-left-navbar {
-    animation: slideLeftNavbar 0.5s ease forwards;
 }

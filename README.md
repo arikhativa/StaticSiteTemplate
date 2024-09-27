@@ -1,1 +1,1 @@
-# Yoav Rabby's Portfolio
+# Template repo for Angular + Netlify

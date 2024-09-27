@@ -1,6 +1,7 @@
 import { Component, HostListener, Input } from '@angular/core'
 import { NavigationEnd, Router } from '@angular/router'
 import { filter } from 'rxjs'
+import { routerPaths } from '../misc/strings'
 
 @Component({
     selector: 'app-navbar',
@@ -10,7 +11,7 @@ import { filter } from 'rxjs'
 export class NavbarComponent {
     @Input() isSideways!: boolean
     activeIndex: number = 0
-    routerLinks = ['/', '/about', '/projects', '/contact']
+    routerLinks = routerPaths
 
     constructor(private router: Router) {}
 
@@ -35,32 +36,5 @@ export class NavbarComponent {
 
     isActive(i: number) {
         return this.activeIndex === i
-    }
-
-    @HostListener('window:keydown', ['$event'])
-    handleKeyDown(event: KeyboardEvent) {
-        if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') {
-            this.navigateLeft()
-        } else if (event.key === 'ArrowRight' || event.key === 'ArrowDown') {
-            this.navigateRight()
-        }
-    }
-
-    navigateLeft() {
-        if (this.activeIndex > 0) {
-            this.activeIndex--
-            this.router.navigate([this.routerLinks[this.activeIndex]], {
-                state: { direction: 1 },
-            })
-        }
-    }
-
-    navigateRight() {
-        if (this.activeIndex < this.routerLinks.length - 1) {
-            this.activeIndex++
-            this.router.navigate([this.routerLinks[this.activeIndex]], {
-                state: { direction: -1 },
-            })
-        }
     }
 }

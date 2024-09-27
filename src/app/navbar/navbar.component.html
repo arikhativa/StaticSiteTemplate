@@ -1,0 +1,339 @@
+<svg
+    *ngIf="!isSideways"
+    class="scale w-full"
+    height="150"
+    viewBox="0 0 450 150"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+>
+    <g
+        id="exported"
+        clip-path="url(#clip0_236_85)"
+    >
+        <g
+            id="bar"
+            filter="url(#filter0_d_236_85)"
+        >
+            <path
+                d="M390.894 38.3751L412.083 75.0757L390.894 111.776L59.7836 111.776L38.5945 75.0756L59.7836 38.375L390.894 38.3751Z"
+                shape-rendering="crispEdges"
+            />
+            <path
+                d="M391.76 37.8751L391.471 37.3751L390.894 37.3751L59.7836 37.375L59.2063 37.375L58.9176 37.875L37.7285 74.5756L37.4398 75.0756L37.7285 75.5756L58.9176 112.276L59.2063 112.776L59.7836 112.776L390.894 112.776L391.471 112.776L391.76 112.276L412.949 75.5757L413.238 75.0757L412.949 74.5757L391.76 37.8751Z"
+                shape-rendering="crispEdges"
+            />
+        </g>
+        <g
+            id="b1"
+            class="hex-con"
+        >
+            <path
+                id="hex1"
+                class="hex"
+                [class.active]="isActive(0)"
+                (click)="setActive(0)"
+                [routerLink]="routerLinks[0]"
+                d="M44.8807 75.2394L63.0533 43.7634L99.3986 43.7634L117.571 75.2394L99.3986 106.715L63.0533 106.715L44.8807 75.2394Z"
+            />
+            <g id="Home">
+                <path
+                    class="icon"
+                    d="M76.125 90.0834V75.5H84.875V90.0834M67.375 71.125L80.5 60.9167L93.625 71.125V87.1667C93.625 87.9402 93.3177 88.6821 92.7707 89.2291C92.2237 89.7761 91.4819 90.0834 90.7083 90.0834H70.2917C69.5181 90.0834 68.7763 89.7761 68.2293 89.2291C67.6823 88.6821 67.375 87.9402 67.375 87.1667V71.125Z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+            </g>
+        </g>
+        <g
+            id="b2"
+            class="hex-con"
+        >
+            <path
+                id="hex2"
+                class="hex"
+                [class.active]="isActive(1)"
+                (click)="setActive(1)"
+                [routerLink]="routerLinks[1]"
+                d="M140.881 75.226L159.053 43.75L195.399 43.75L213.571 75.226L195.399 106.702L159.053 106.702L140.881 75.226Z"
+            />
+            <g id="User">
+                <path
+                    class="icon"
+                    d="M188.167 88.625V85.7083C188.167 84.1612 187.552 82.6775 186.458 81.5835C185.364 80.4896 183.88 79.875 182.333 79.875H170.667C169.12 79.875 167.636 80.4896 166.542 81.5835C165.448 82.6775 164.833 84.1612 164.833 85.7083V88.625M182.333 68.2083C182.333 71.43 179.722 74.0417 176.5 74.0417C173.278 74.0417 170.667 71.43 170.667 68.2083C170.667 64.9867 173.278 62.375 176.5 62.375C179.722 62.375 182.333 64.9867 182.333 68.2083Z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+            </g>
+        </g>
+
+        <g
+            id="b3"
+            class="hex-con"
+        >
+            <path
+                id="hex3"
+                class="hex"
+                [class.active]="isActive(2)"
+                (click)="setActive(2)"
+                [routerLink]="routerLinks[2]"
+                d="M236.881 75.226L255.053 43.75L291.399 43.75L309.571 75.226L291.399 106.702L255.053 106.702L236.881 75.226Z"
+            />
+            <g id="Briefcase">
+                <path
+                    class="icon"
+                    d="M278.333 88.625V65.2917C278.333 64.5181 278.026 63.7763 277.479 63.2293C276.932 62.6823 276.19 62.375 275.417 62.375H269.583C268.81 62.375 268.068 62.6823 267.521 63.2293C266.974 63.7763 266.667 64.5181 266.667 65.2917V88.625M260.833 68.2083H284.167C285.777 68.2083 287.083 69.5142 287.083 71.125V85.7083C287.083 87.3192 285.777 88.625 284.167 88.625H260.833C259.222 88.625 257.917 87.3192 257.917 85.7083V71.125C257.917 69.5142 259.222 68.2083 260.833 68.2083Z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+            </g>
+        </g>
+        <g
+            id="b4"
+            class="hex-con"
+        >
+            <path
+                id="hex4"
+                class="hex"
+                [class.active]="isActive(3)"
+                (click)="setActive(3)"
+                [routerLink]="routerLinks[3]"
+                d="M332.881 75.226L351.053 43.75L387.399 43.75L405.571 75.226L387.399 106.702L351.053 106.702L332.881 75.226Z"
+            />
+            <g id="Mail">
+                <path
+                    class="icon"
+                    d="M383.083 67.75C383.083 66.1458 381.771 64.8333 380.167 64.8333H356.833C355.229 64.8333 353.917 66.1458 353.917 67.75M383.083 67.75V85.25C383.083 86.8541 381.771 88.1666 380.167 88.1666H356.833C355.229 88.1666 353.917 86.8541 353.917 85.25V67.75M383.083 67.75L368.5 77.9583L353.917 67.75"
+                    stroke="#900B09"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+            </g>
+        </g>
+    </g>
+    <defs>
+        <filter
+            id="filter0_d_236_85"
+            x="22.2852"
+            y="36.375"
+            width="392.107"
+            height="99.4012"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+        >
+            <feFlood
+                flood-opacity="0"
+                result="BackgroundImageFix"
+            />
+            <feColorMatrix
+                in="SourceAlpha"
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                result="hardAlpha"
+            />
+            <feOffset
+                dx="-11"
+                dy="19"
+            />
+            <feGaussianBlur stdDeviation="1.5" />
+            <feComposite
+                in2="hardAlpha"
+                operator="out"
+            />
+            <feColorMatrix
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"
+            />
+            <feBlend
+                mode="normal"
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow_236_85"
+            />
+            <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="effect1_dropShadow_236_85"
+                result="shape"
+            />
+        </filter>
+        <clipPath id="clip0_236_85">
+            <rect
+                width="450"
+                height="150"
+                fill="white"
+            />
+        </clipPath>
+    </defs>
+</svg>
+
+<!-- Sideways -->
+<svg
+    *ngIf="isSideways"
+    class="scale h-full"
+    height="420"
+    width="128"
+    viewBox="0 0 128 420"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+>
+    <g
+        id="exported side"
+        clip-path="url(#clip0_259_58)"
+    >
+        <g
+            id="bar"
+            filter="url(#filter0_d_259_58)"
+        >
+            <path
+                d="M29.375 35.7836L66.0756 14.5945L102.776 35.7837L102.776 366.894L66.0755 388.083L29.3749 366.894L29.375 35.7836Z"
+                fill="#3239BA"
+                fill-opacity="0.8"
+                shape-rendering="crispEdges"
+            />
+            <path
+                d="M28.875 34.9176L28.3751 35.2063L28.375 35.7836L28.3749 366.894L28.3749 367.471L28.8749 367.76L65.5755 388.949L66.0755 389.238L66.5755 388.949L103.276 367.76L103.776 367.471L103.776 366.894L103.776 35.7837L103.776 35.2064L103.276 34.9177L66.5756 13.7285L66.0756 13.4398L65.5756 13.7285L28.875 34.9176Z"
+                stroke="#8389F0"
+                stroke-opacity="0.8"
+                stroke-width="2"
+                shape-rendering="crispEdges"
+            />
+        </g>
+        <g
+            id="b4"
+            class="hex-con"
+        >
+            <path
+                id="hex4"
+                class="hex"
+                [class.active]="isActive(3)"
+                (click)="setActive(3)"
+                [routerLink]="routerLinks[3]"
+                d="M66.226 381.571L34.75 363.399L34.75 327.053L66.226 308.881L97.7019 327.053L97.7019 363.399L66.226 381.571Z"
+            />
+            <g id="Mail">
+                <path
+                    class="icon"
+                    d="M80.0833 336.75C80.0833 335.146 78.7708 333.833 77.1666 333.833H53.8333C52.2291 333.833 50.9166 335.146 50.9166 336.75M80.0833 336.75V354.25C80.0833 355.854 78.7708 357.167 77.1666 357.167H53.8333C52.2291 357.167 50.9166 355.854 50.9166 354.25V336.75M80.0833 336.75L65.5 346.958L50.9166 336.75"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+            </g>
+        </g>
+        <g
+            id="b3"
+            class="hex-con"
+        >
+            <path
+                id="hex3"
+                class="hex"
+                [class.active]="isActive(2)"
+                (click)="setActive(2)"
+                [routerLink]="routerLinks[2]"
+                d="M66.226 285.571L34.75 267.399L34.75 231.053L66.226 212.881L97.7019 231.053L97.7019 267.399L66.226 285.571Z"
+            />
+            <g id="Briefcase">
+                <path
+                    class="icon"
+                    d="M71.3333 262.625V239.292C71.3333 238.518 71.026 237.776 70.479 237.229C69.932 236.682 69.1902 236.375 68.4166 236.375H62.5833C61.8097 236.375 61.0679 236.682 60.5209 237.229C59.9739 237.776 59.6666 238.518 59.6666 239.292V262.625M53.8333 242.208H77.1666C78.7775 242.208 80.0833 243.514 80.0833 245.125V259.708C80.0833 261.319 78.7775 262.625 77.1666 262.625H53.8333C52.2225 262.625 50.9166 261.319 50.9166 259.708V245.125C50.9166 243.514 52.2225 242.208 53.8333 242.208Z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+            </g>
+        </g>
+        <g
+            id="b2"
+            class="hex-con"
+        >
+            <path
+                id="hex2"
+                class="hex"
+                [class.active]="isActive(1)"
+                (click)="setActive(1)"
+                [routerLink]="routerLinks[1]"
+                d="M66.226 189.571L34.75 171.399L34.75 135.053L66.226 116.881L97.7019 135.053L97.7019 171.399L66.226 189.571Z"
+            />
+            <g id="User">
+                <path
+                    class="icon"
+                    d="M77.1667 166.625V163.708C77.1667 162.161 76.5521 160.678 75.4582 159.584C74.3642 158.49 72.8805 157.875 71.3334 157.875H59.6667C58.1196 157.875 56.6359 158.49 55.5419 159.584C54.448 160.678 53.8334 162.161 53.8334 163.708V166.625M71.3334 146.208C71.3334 149.43 68.7217 152.042 65.5 152.042C62.2784 152.042 59.6667 149.43 59.6667 146.208C59.6667 142.987 62.2784 140.375 65.5 140.375C68.7217 140.375 71.3334 142.987 71.3334 146.208Z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+            </g>
+        </g>
+        <g
+            id="b1"
+            class="hex-con"
+        >
+            <path
+                id="hex1"
+                class="hex"
+                [class.active]="isActive(0)"
+                (click)="setActive(0)"
+                [routerLink]="routerLinks[0]"
+                d="M66.226 93.5712L34.75 75.3986L34.75 39.0533L66.226 20.8807L97.7019 39.0533L97.7019 75.3986L66.226 93.5712Z"
+            />
+            <g id="Home">
+                <path
+                    class="icon"
+                    d="M61.125 72.0833V57.5H69.875V72.0833M52.375 53.125L65.5 42.9166L78.625 53.125V69.1666C78.625 69.9402 78.3177 70.682 77.7707 71.229C77.2237 71.776 76.4819 72.0833 75.7083 72.0833H55.2917C54.5181 72.0833 53.7763 71.776 53.2293 71.229C52.6823 70.682 52.375 69.9402 52.375 69.1666V53.125Z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+            </g>
+        </g>
+    </g>
+    <defs>
+        <filter
+            id="filter0_d_259_58"
+            x="13.375"
+            y="12.2852"
+            width="91.4012"
+            height="400.107"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+        >
+            <feFlood
+                flood-opacity="0"
+                result="BackgroundImageFix"
+            />
+            <feColorMatrix
+                in="SourceAlpha"
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                result="hardAlpha"
+            />
+            <feOffset
+                dx="-11"
+                dy="19"
+            />
+            <feGaussianBlur stdDeviation="1.5" />
+            <feComposite
+                in2="hardAlpha"
+                operator="out"
+            />
+            <feColorMatrix
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"
+            />
+            <feBlend
+                mode="normal"
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow_259_58"
+            />
+            <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="effect1_dropShadow_259_58"
+                result="shape"
+            />
+        </filter>
+        <clipPath id="clip0_259_58">
+            <rect
+                width="128"
+                height="420"
+                fill="white"
+            />
+        </clipPath>
+    </defs>
+</svg>

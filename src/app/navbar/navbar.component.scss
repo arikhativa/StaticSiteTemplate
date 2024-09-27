@@ -1,0 +1,47 @@
+:host:hover .scale {
+    transform: scale(1.1);
+}
+
+svg {
+    z-index: 0;
+    pointer-events: all;
+    transition: transform 0.3s ease;
+}
+
+#bar path {
+    fill: var(--primary);
+    fill-opacity: 0.8;
+
+    stroke: var(--primary-light);
+    stroke-opacity: 0.8;
+    stroke-width: 2.5;
+}
+
+.hex-con {
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.hex-con:hover .hex {
+    stroke: var(--primary-light);
+    stroke-width: 3;
+}
+
+.hex {
+    fill: var(--background-dark);
+    stroke: transparent;
+    stroke-width: 0;
+
+    transition: stroke 0.3s ease, stroke-width 0.3s ease;
+}
+
+.hex.active {
+    stroke: var(--primary-light);
+    stroke-width: 3;
+}
+
+.icon {
+    pointer-events: none;
+    stroke: var(--primary-light);
+    stroke-width: 3;
+}
